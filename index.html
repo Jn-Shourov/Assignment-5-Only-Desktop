@@ -18,11 +18,221 @@
     .font-poppins {
       font-family: "Poppins", sans-serif;
     }
+
+    .max-width {
+      max-width: 1536px;
+      margin: 0 auto;
+    }
+
+    :root {
+      --primary-a: #3752FD;
+      --primary-bg: #F4F7FF;
+      --primary-text: #00303C;
+      --gradient-a: #3752FD;
+      --gradient-b: #6C7FFA;
+      --gradient-c: #9BA8F8;
+    }
   </style>
 </head>
 
-<body>
-  <h1 class="font-poppins">hello</h1>
+<body class="bg-[var(--primary-bg)]">
+  <!-- Header Section -->
+  <header class="max-width">
+    <nav class="mt-6 py-4.5 flex items-center justify-between bg-white rounded-2xl">
+
+      <div class="flex gap-3 items-center pl-6">
+        <img src="assets/logo.png" alt="logo">
+        <h1 class="text-4xl font-light">Dev<span class="font-bold">Board</span></h1>
+      </div>
+
+      <div class="mr-6 flex items-center gap-9.5">
+        <div class="bg-[var(--primary-bg)] py-2 px-5 flex gap-4 items-center rounded-[40px]">
+          <img src="assets/checkbox.png" alt="checkbox">
+          <p class="text-[32px] font-bold">23</p>
+        </div>
+        <button>
+          <div class="bg-[var(--primary-bg)] p-3 rounded-full">
+            <img src="assets/theme-btn.png" alt="theme button">
+          </div>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Section -->
+  <main class="max-width">
+    <!-- Full Big Section -->
+    <article class="mt-5 rounded-2xl bg-white">
+      <!-- Header -->
+      <div class="p-6 border-b-2 border-dashed border-[var(--primary-bg)] flex gap-6 w-[1146px]">
+        <div class="rounded-xl pt-8 pr-6 pb-6 pl-8 flex gap-5 items-center bg-[var(--primary-bg)] w-[263px]">
+          <div class=" p-4.5 bg-white rounded-full">
+            <img src="assets/checkbox.png" alt="checkbox">
+          </div>
+          <div>
+            <p class="text-base text-[var(--primary-text)]">Task Assigned</p>
+            <p class="font-bold text-[32px]">05</p>
+          </div>
+        </div>
+
+        <div
+          class="rounded-xl pt-5 px-10 pb-6 flex items-center gap-5 cursor-pointer bg-gradient-to-r from-[var(--gradient-a)] via-[var(--gradient-b)] to-[var(--gradient-c)] w-[524px]">
+          <img src="assets/board.png" alt="board">
+          <p class="text-2xl text-white pr-26">Discover Something<br>New Today!</p>
+        </div>
+
+        <div class="rounded-xl py-8 px-6 flex gap-4 items-center bg-[var(--primary-bg)] w-[263px]">
+          <div class=" p-4.5 bg-white rounded-full">
+            <img src="assets/calender.png" alt="calender">
+          </div>
+          <p class="text-[22px]">Wed ,<br><span class="font-bold">Jul 28 2025</span></p>
+        </div>
+      </div>
+
+      <!-- Grid Section -->
+      <div class="p-6 w-[1146px] grid-cols-3 gap-9">
+
+        <!-- ShopEase -->
+        <div class="">
+          <p>ShopEase</p>
+          <h2>
+            Fix Mobile Button Issue
+          </h2>
+          <p>
+            Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+            and ensure onClick works properly
+          </p>
+
+          <hr>
+
+          <div>
+            <div>
+              <p>Deadline</p>
+              <p>21 March 2025</p>
+            </div>
+
+            <button>Completed</button>
+          </div>
+        </div>
+
+        <div class="">
+          <p>ShopEase</p>
+          <h2>
+            Fix Mobile Button Issue
+          </h2>
+          <p>
+            Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+            and ensure onClick works properly
+          </p>
+
+          <hr>
+
+          <div>
+            <div>
+              <p>Deadline</p>
+              <p>21 March 2025</p>
+            </div>
+
+            <button>Completed</button>
+          </div>
+        </div>
+
+        <div class="">
+          <p>ShopEase</p>
+          <h2>
+            Fix Mobile Button Issue
+          </h2>
+          <p>
+            Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+            and ensure onClick works properly
+          </p>
+
+          <hr>
+
+          <div>
+            <div>
+              <p>Deadline</p>
+              <p>21 March 2025</p>
+            </div>
+
+            <button>Completed</button>
+          </div>
+        </div>
+
+        <div class="">
+          <p>ShopEase</p>
+          <h2>
+            Fix Mobile Button Issue
+          </h2>
+          <p>
+            Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+            and ensure onClick works properly
+          </p>
+
+          <hr>
+
+          <div>
+            <div>
+              <p>Deadline</p>
+              <p>21 March 2025</p>
+            </div>
+
+            <button>Completed</button>
+          </div>
+        </div>
+
+        <div class="">
+          <p>ShopEase</p>
+          <h2>
+            Fix Mobile Button Issue
+          </h2>
+          <p>
+            Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+            and ensure onClick works properly
+          </p>
+
+          <hr>
+
+          <div>
+            <div>
+              <p>Deadline</p>
+              <p>21 March 2025</p>
+            </div>
+
+            <button>Completed</button>
+          </div>
+        </div>
+
+        <div class="">
+          <p>ShopEase</p>
+          <h2>
+            Fix Mobile Button Issue
+          </h2>
+          <p>
+            Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+            and ensure onClick works properly
+          </p>
+
+          <hr>
+
+          <div>
+            <div>
+              <p>Deadline</p>
+              <p>21 March 2025</p>
+            </div>
+
+            <button>Completed</button>
+          </div>
+        </div>
+
+      </div>
+    </article>
+
+    <!-- Task List Section -->
+    <aside></aside>
+  </main>
+
+
   <script src="script.js"></script>
 </body>
 
