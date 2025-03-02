@@ -54,23 +54,34 @@
   <h2 class="text-3xl text-center font-bold mt-4">Blogs</h2>
 
   <main class="max-width">
-
     <div class="my-6 px-6 py-4.5 bg-white">
       <p class="text-[var(--primary-text)] text-xl font-bold pb-4 border-b-2 border-dashed border-slate-200">Question-1:
         What are the different ways to select an
         element in the
         DOM?</p>
-      <p class="mt-3 text-gray-600 text-xl">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit, sint dolorum
-        aliquid magni consequuntur iusto sed odio praesentium voluptatem doloribus ipsam accusantium architecto
-        voluptatum quod. Numquam consequuntur necessitatibus iusto.</p>
+      <p class="mt-3 text-gray-600 text-xl">There are 5 different ways to select an element in the DOM. 1.
+        document.getElementsByTagName(Select one or more elements of HTML by its/their tag or element name), 2.
+        document.getElementById(Select one HTML element by its unique id), 3. document.getElementsByClass(Select one or
+        more elements of HTML by its/their class name), 4.
+        document.querySelector(Select one element of HTML by its CSS selector), 5. document.querySelectorAll(Select one
+        or more elements of HTML by its/their CSS selector). </p>
     </div>
 
     <div class="my-6 px-6 py-4.5 bg-white">
       <p class="text-[var(--primary-text)] text-xl font-bold pb-4 border-b-2 border-dashed border-slate-200">Question-2:
         What is the difference between innerHTML, innerText, and textContent ?</p>
-      <p class="mt-3 text-gray-600 text-xl">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit, sint dolorum
-        aliquid magni consequuntur iusto sed odio praesentium voluptatem doloribus ipsam accusantium architecto
-        voluptatum quod. Numquam consequuntur necessitatibus iusto.</p>
+      <p class="mt-3 text-gray-600 text-xl">The differences between them are :
+        <br><br>
+        1. 'innerHTML' gives us each and every character written in that perticular element or tag, even other HTML
+        contents, just not the comments.
+        <br>
+        2. 'innerText' gives us only the text or string that is shown on the webpage, written in that element ignoring
+        other things.
+        <br>
+        3. 'textContent' gives us only the text that is written in that element ignoring other things like 'innerText'
+        but whether its shown or hidden in webpage by CSS properties, it will give us every text in between that
+        element. So, CSS does not applied to it.
+      </p>
     </div>
 
     <div class="my-6 px-6 py-4.5 bg-white">
@@ -92,9 +103,23 @@
     <div class="my-6 px-6 py-4.5 bg-white">
       <p class="text-[var(--primary-text)] text-xl font-bold pb-4 border-b-2 border-dashed border-slate-200">Question-5:
         How do you create, add, and remove elements using JavaScript?</p>
-      <p class="mt-3 text-gray-600 text-xl">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit, sint dolorum
-        aliquid magni consequuntur iusto sed odio praesentium voluptatem doloribus ipsam accusantium architecto
-        voluptatum quod. Numquam consequuntur necessitatibus iusto.</p>
+      <p class="mt-3 text-gray-600 text-xl">
+        Creating an element and showing how to add and remove that element, using JavaScript:
+        <br><br>
+        1. const newElement = document.createElement('Tag Name Of HTML Element');
+        <br>
+        2. document.body.appendChild(newElement);
+        <br>
+        3. document.body.removeChild(newElement);
+        <br>
+        or,
+        <br>
+        newElement.remove();
+        <br><br>
+        This is how to create (.createElement('Element Tag')), add (.appendChild()) and remove (.removeChild() / ) an
+        element using
+        JavaScript.
+      </p>
     </div>
   </main>
 
