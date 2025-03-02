@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
   <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,7 +43,8 @@
       </div>
 
       <div class="mr-6">
-        <button class="rounded-lg px-5 py-2.5 text-white text-xl bg-[var(--primary-a)] cursor-pointer">
+        <button id="blog-to-index"
+          class="rounded-lg px-5 py-2.5 text-white text-xl bg-[var(--primary-a)] cursor-pointer">
           Back To Desk
         </button>
       </div>
@@ -95,6 +97,13 @@
         voluptatum quod. Numquam consequuntur necessitatibus iusto.</p>
     </div>
   </main>
+
+  <script>
+    document.getElementById('blog-to-index')
+      .addEventListener('click', function () {
+        window.location.href = '/index.html';
+      })
+  </script>
 </body>
 
 </html>

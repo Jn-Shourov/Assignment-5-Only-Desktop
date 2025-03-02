@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
   <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -48,7 +49,7 @@
       <div class="mr-6 flex items-center gap-9.5">
         <div class="bg-[var(--primary-bg)] py-2 px-5 flex gap-4 items-center rounded-[40px]">
           <img src="assets/checkbox.png" alt="checkbox">
-          <p class="text-[32px] font-bold">23</p>
+          <p id="task-completed" class="text-[32px] font-bold">23</p>
         </div>
         <button>
           <div class="bg-[var(--primary-bg)] p-3 rounded-full">
@@ -73,11 +74,11 @@
           </div>
           <div>
             <p>Task Assigned</p>
-            <p class="font-bold text-[32px]">06</p>
+            <p id="task-to-do" class="font-bold text-[32px]">6</p>
           </div>
         </div>
 
-        <div
+        <div id="index-to-blog"
           class="rounded-xl pt-5 px-10 pb-6 flex items-center gap-5 cursor-pointer bg-gradient-to-r from-[var(--gradient-a)] via-[var(--gradient-b)] to-[var(--gradient-c)] w-[524px]">
           <img src="assets/board.png" alt="board">
           <p class="text-2xl text-white pr-26">Discover Something<br>New Today!</p>
@@ -112,7 +113,8 @@
               <p class="font-medium">21 March 2025</p>
             </div>
 
-            <button class="rounded-lg px-5 py-2.5 text-white text-base bg-[var(--primary-a)]">Complete</button>
+            <button
+              class="complete-btn cursor-pointer rounded-lg px-5 py-2.5 text-white text-base bg-[var(--primary-a)]">Complete</button>
           </div>
         </div>
 
@@ -134,7 +136,8 @@
               <p class="font-medium">21 March 2025</p>
             </div>
 
-            <button class="rounded-lg px-5 py-2.5 text-white text-base bg-[var(--primary-a)]">Complete</button>
+            <button
+              class="complete-btn cursor-pointer rounded-lg px-5 py-2.5 text-white text-base bg-[var(--primary-a)]">Complete</button>
           </div>
         </div>
 
@@ -156,7 +159,8 @@
               <p class="font-medium">21 March 2025</p>
             </div>
 
-            <button class="rounded-lg px-5 py-2.5 text-white text-base bg-[var(--primary-a)]">Complete</button>
+            <button
+              class="complete-btn cursor-pointer rounded-lg px-5 py-2.5 text-white text-base bg-[var(--primary-a)]">Complete</button>
           </div>
         </div>
 
@@ -178,7 +182,8 @@
               <p class="font-medium">21 March 2025</p>
             </div>
 
-            <button class="rounded-lg px-5 py-2.5 text-white text-base bg-[var(--primary-a)]">Complete</button>
+            <button
+              class="complete-btn cursor-pointer rounded-lg px-5 py-2.5 text-white text-base bg-[var(--primary-a)]">Complete</button>
           </div>
         </div>
 
@@ -200,7 +205,8 @@
               <p class="font-medium">21 March 2025</p>
             </div>
 
-            <button class="rounded-lg px-5 py-2.5 text-white text-base bg-[var(--primary-a)]">Complete</button>
+            <button
+              class="complete-btn cursor-pointer rounded-lg px-5 py-2.5 text-white text-base bg-[var(--primary-a)]">Complete</button>
           </div>
         </div>
 
@@ -222,7 +228,8 @@
               <p class="font-medium">21 March 2025</p>
             </div>
 
-            <button class="rounded-lg px-5 py-2.5 text-white text-base bg-[var(--primary-a)]">Complete</button>
+            <button
+              class="complete-btn cursor-pointer rounded-lg px-5 py-2.5 text-white text-base bg-[var(--primary-a)]">Complete</button>
           </div>
         </div>
 
@@ -239,11 +246,13 @@
           <h2 class="text-xl">Activity Log</h2>
         </div>
 
-        <button class="mt-4 rounded-lg px-5 py-2.5 text-white text-base bg-[var(--primary-a)]">Clear History</button>
+        <button id="clear-history-btn"
+          class="cursor-pointer mt-4 rounded-lg px-5 py-2.5 text-white text-base bg-[var(--primary-a)]">Clear
+          History</button>
       </div>
 
-
-      <div class="mt-6 px-6 flex flex-col gap-7">
+      <!-- Activity Board -->
+      <div id="activity-board" class="mt-6 px-6 flex flex-col gap-7">
 
       </div>
     </aside>
