@@ -36,11 +36,9 @@
   </style>
 </head>
 
-<body class="bg-[var(--primary-bg)] text-[var(--primary-text)]">
-  <!-- Header Section -->
+<body id="body" class="bg-[var(--primary-bg)] text-[var(--primary-text)]">
   <header class="max-width">
     <nav class="mt-6 py-4.5 flex items-center justify-between bg-white rounded-2xl drop-shadow-sm">
-
       <div class="flex gap-3 items-center pl-6">
         <img src="assets/logo.png" alt="logo">
         <h1 class="text-4xl font-light">Dev<span class="font-bold">Board</span></h1>
@@ -51,7 +49,7 @@
           <img src="assets/checkbox.png" alt="checkbox">
           <p id="task-completed" class="text-[32px] font-bold">23</p>
         </div>
-        <button>
+        <button id="color-change-btn" class="cursor-pointer">
           <div class="bg-[var(--primary-bg)] p-3 rounded-full">
             <img src="assets/theme-btn.png" alt="theme button">
           </div>
@@ -60,13 +58,8 @@
     </nav>
   </header>
 
-  <!-- Main Section -->
   <main class="max-width flex gap-6 pb-4">
-
-    <!-- Full Big Section -->
     <article class="drop-shadow-sm mt-5 rounded-2xl bg-white w-[1146px]">
-
-      <!-- Header -->
       <div class="p-6 border-b-2 border-dashed border-slate-200 flex gap-6">
         <div class="rounded-xl pt-8 pr-6 pb-6 pl-8 flex gap-5 items-center bg-[var(--primary-bg)] w-[263px]">
           <div class=" p-4.5 bg-white rounded-full">
@@ -88,14 +81,14 @@
           <div class=" p-4.5 bg-white rounded-full">
             <img src="assets/calender.png" alt="calender">
           </div>
-          <p class="text-[22px]">Wed ,<br><span class="font-bold">Jul 28 2025</span></p>
+          <div class="flex flex-col">
+            <p id="display-day" class="text-[22px]"></p>
+            <p id="display-date" class="text-[22px] font-bold"></p>
+          </div>
         </div>
       </div>
 
-      <!-- Grid Section -->
       <div class="p-6 grid grid-cols-3 gap-x-9 gap-y-9">
-
-        <!-- ShopEase -->
         <div class="w-[342px] bg-[var(--primary-bg)] rounded-xl p-6">
           <div class="pb-3.5 border-b-2 border-dashed border-slate-200">
             <p class="py-2 px-4 bg-white rounded-lg inline">ShopEase</p>
@@ -106,19 +99,16 @@
               Debug using Chrome DevTools, check for overlapping elements and ensure onclick works properly.
             </p>
           </div>
-
           <div class="pt-3 flex justify-between">
             <div>
               <p class="text-sm">Deadline</p>
               <p class="font-medium">21 March 2025</p>
             </div>
-
             <button
               class="complete-btn cursor-pointer rounded-lg px-5 py-2.5 text-white text-base bg-[var(--primary-a)]">Complete</button>
           </div>
         </div>
 
-        <!-- CloudSync -->
         <div class="w-[342px] bg-[var(--primary-bg)] rounded-xl p-6">
           <div class="pb-3.5 border-b-2 border-dashed border-slate-200">
             <p class="py-2 px-4 bg-white rounded-lg inline">CloudSync</p>
@@ -129,19 +119,16 @@
               Store the user's preference in localStorage and update CSS variables dynamically.
             </p>
           </div>
-
           <div class="flex justify-between pt-3">
             <div>
               <p class="text-sm">Deadline</p>
               <p class="font-medium">21 March 2025</p>
             </div>
-
             <button
               class="complete-btn cursor-pointer rounded-lg px-5 py-2.5 text-white text-base bg-[var(--primary-a)]">Complete</button>
           </div>
         </div>
 
-        <!-- SwiftPay -->
         <div class="w-[342px] bg-[var(--primary-bg)] rounded-xl p-6">
           <div class="pb-3.5 border-b-2 border-dashed border-slate-200">
             <p class="py-2 px-4 bg-white rounded-lg inline">SwiftPay</p>
@@ -152,19 +139,16 @@
               Debug using Chrome DevTools, check for overlapping elements and ensure onclick works properly.
             </p>
           </div>
-
           <div class="flex justify-between pt-3">
             <div>
               <p class="text-sm">Deadline</p>
               <p class="font-medium">21 March 2025</p>
             </div>
-
             <button
               class="complete-btn cursor-pointer rounded-lg px-5 py-2.5 text-white text-base bg-[var(--primary-a)]">Complete</button>
           </div>
         </div>
 
-        <!-- Meta -->
         <div class="w-[342px] bg-[var(--primary-bg)] rounded-xl p-6">
           <div class="pb-3.5 border-b-2 border-dashed border-slate-200">
             <p class="py-2 px-4 bg-white rounded-lg inline">Meta</p>
@@ -175,19 +159,16 @@
               Store the user's preference in localStorage and update CSS variables dynamically.
             </p>
           </div>
-
           <div class="flex justify-between pt-3">
             <div>
               <p class="text-sm">Deadline</p>
               <p class="font-medium">21 March 2025</p>
             </div>
-
             <button
               class="complete-btn cursor-pointer rounded-lg px-5 py-2.5 text-white text-base bg-[var(--primary-a)]">Complete</button>
           </div>
         </div>
 
-        <!-- Google LLC -->
         <div class="w-[342px] bg-[var(--primary-bg)] rounded-xl p-6">
           <div class="pb-3.5 border-b-2 border-dashed border-slate-200">
             <p class="py-2 px-4 bg-white rounded-lg inline">Google LLC</p>
@@ -198,19 +179,16 @@
               Debug using Chrome DevTools, check for overlapping elements and ensure onclick works properly.
             </p>
           </div>
-
           <div class="flex justify-between pt-3">
             <div>
               <p class="text-sm">Deadline</p>
               <p class="font-medium">21 March 2025</p>
             </div>
-
             <button
               class="complete-btn cursor-pointer rounded-lg px-5 py-2.5 text-white text-base bg-[var(--primary-a)]">Complete</button>
           </div>
         </div>
 
-        <!-- Glassdoar -->
         <div class="w-[342px] bg-[var(--primary-bg)] rounded-xl p-6">
           <div class="pb-3.5 border-b-2 border-dashed border-slate-200">
             <p class="py-2 px-4 bg-white rounded-lg inline">Glassdoar</p>
@@ -221,43 +199,33 @@
               Store the user's preference in localStorage and update CSS variables dynamically.
             </p>
           </div>
-
           <div class="flex justify-between pt-3">
             <div>
               <p class="text-sm">Deadline</p>
               <p class="font-medium">21 March 2025</p>
             </div>
-
             <button
               class="complete-btn cursor-pointer rounded-lg px-5 py-2.5 text-white text-base bg-[var(--primary-a)]">Complete</button>
           </div>
         </div>
-
       </div>
     </article>
 
-    <!-- Task List Section -->
     <aside class="drop-shadow-sm mt-5 rounded-2xl bg-white w-[366px]">
-
-      <!-- Top Section -->
       <div class="text-center mt-6 pb-3.5 border-b-2 border-dashed border-slate-200">
         <div class="flex gap-4 items-center justify-center">
           <img src="assets/activity.png" alt="activity">
           <h2 class="text-xl">Activity Log</h2>
         </div>
-
         <button id="clear-history-btn"
           class="cursor-pointer mt-4 rounded-lg px-5 py-2.5 text-white text-base bg-[var(--primary-a)]">Clear
           History</button>
       </div>
 
-      <!-- Activity Board -->
       <div id="activity-board" class="mt-6 px-6 flex flex-col gap-7">
-
       </div>
     </aside>
   </main>
-
 
   <script src="script.js"></script>
 </body>

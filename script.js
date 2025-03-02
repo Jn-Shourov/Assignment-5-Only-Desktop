@@ -4,7 +4,25 @@ const taskCompleted = document.getElementById('task-completed');
 const activityBoard = document.getElementById('activity-board');
 const clearHistoryBtn = document.getElementById('clear-history-btn');
 const indexToBlog = document.getElementById('index-to-blog');
-const date = new Date().toDateString().replace(' ', ', ');
+const body = document.getElementById('body');
+const colorChangeBtn = document.getElementById('color-change-btn');
+
+colorChangeBtn.addEventListener('click', function () {
+  const colorA = Math.floor(Math.random() * 255);
+  const colorB = Math.floor(Math.random() * 255);
+  const colorC = Math.floor(Math.random() * 255);
+  body.style.backgroundColor = `rgb(${colorA},${colorB},${colorC})`;
+});
+
+const displayDay = document.getElementById('display-day');
+const day = new Date();
+const todaysDay = day.toString().slice(0, 3);
+displayDay.innerHTML = todaysDay + ',';
+
+const displayDate = document.getElementById('display-date');
+const date = new Date();
+const todayDate = date.toString().slice(4, 15);
+displayDate.innerHTML = todayDate;
 
 indexToBlog.addEventListener('click', function () {
   window.location.href = '/blog.html';
