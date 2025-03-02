@@ -38,7 +38,7 @@ const disableOnClick = function (param) {
 
 const updateActivityBoard = function (name, todayTime) {
   const p = document.createElement('p');
-  p.innerHTML = `You have Complete The ${name} at ${todayTime}`;
+  p.innerHTML = `You have completed the task ${name} at ${todayTime}`;
   p.style.padding = '10px';
   p.style.backgroundColor = '#F4F7FF';
   p.style.borderRadius = '8px';

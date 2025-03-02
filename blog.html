@@ -100,9 +100,19 @@
     <div class="my-6 px-6 py-4.5 bg-white">
       <p class="text-[var(--primary-text)] text-xl font-bold pb-4 border-b-2 border-dashed border-slate-200">Question-3:
         What is event delegation in the DOM?</p>
-      <p class="mt-3 text-gray-600 text-xl">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit, sint dolorum
-        aliquid magni consequuntur iusto sed odio praesentium voluptatem doloribus ipsam accusantium architecto
-        voluptatum quod. Numquam consequuntur necessitatibus iusto.</p>
+      <p class="mt-3 text-gray-600 text-xl">Event Delegation in the DOM is a very unique but useful technique to work
+        with dynamically created child item in any parent node. It is used for handling events by the parent instead of
+        child elements using the help of Event Bubbling concept.
+
+        <br><br>
+        Also it solves the problem of using too much event listener in the child nodes. So the problem is, when a child
+        node is created by DOM, the event listeners added for the previously built in child nodes do not work for the
+        new one. Then a solution can be done by putting new event listener for each newly created child node which is
+        not very sufficient way to handle this. So the best approach to this problem is to add the event listener to the
+        parent node and then any of the child node don't need an event listener for each self but the event listener of
+        the parent works for all, no matter its created by DOM or previously built in by HTML. And, this approach to
+        this problem is known as Event Delegation.
+      </p>
     </div>
 
     <div class="my-6 px-6 py-4.5 bg-white">
