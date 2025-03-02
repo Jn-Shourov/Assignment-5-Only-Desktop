@@ -4,6 +4,7 @@ const taskCompleted = document.getElementById('task-completed');
 const activityBoard = document.getElementById('activity-board');
 const clearHistoryBtn = document.getElementById('clear-history-btn');
 const indexToBlog = document.getElementById('index-to-blog');
+const date = new Date().toDateString().replace(' ', ', ');
 
 indexToBlog.addEventListener('click', function () {
   window.location.href = '/blog.html';
@@ -17,9 +18,9 @@ const disableOnClick = function (param) {
   param.style.cursor = 'default';
 };
 
-const updateActivityBoard = function (name) {
+const updateActivityBoard = function (name, todayTime) {
   const p = document.createElement('p');
-  p.innerHTML = `You have Complete The ${name} at 12:48:15 PM`;
+  p.innerHTML = `You have Complete The ${name} at ${todayTime}`;
   p.style.padding = '10px';
   p.style.backgroundColor = '#F4F7FF';
   p.style.borderRadius = '8px';
@@ -32,6 +33,8 @@ for (const completeBtn of completeBtns) {
       e.target.parentNode.parentNode.childNodes[1].childNodes[3].innerText;
     const btnToDisable = e.target;
     let taskCompletedNum = parseInt(taskCompleted.innerHTML);
+    const time = new Date();
+    const todayTime = time.toLocaleTimeString('us-EN');
 
     alert('Board Updated Successfully');
     taskToDo.innerHTML -= 1;
@@ -39,7 +42,7 @@ for (const completeBtn of completeBtns) {
     taskCompleted.innerHTML = taskCompletedNum;
 
     disableOnClick(btnToDisable);
-    updateActivityBoard(completedTaskName);
+    updateActivityBoard(completedTaskName, todayTime);
 
     if (taskToDo.innerHTML == 0) {
       alert('Congrats!!! You have completed all the task!');

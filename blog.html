@@ -59,12 +59,23 @@
         What are the different ways to select an
         element in the
         DOM?</p>
-      <p class="mt-3 text-gray-600 text-xl">There are 5 different ways to select an element in the DOM. 1.
-        document.getElementsByTagName(Select one or more elements of HTML by its/their tag or element name), 2.
-        document.getElementById(Select one HTML element by its unique id), 3. document.getElementsByClass(Select one or
-        more elements of HTML by its/their class name), 4.
-        document.querySelector(Select one element of HTML by its CSS selector), 5. document.querySelectorAll(Select one
-        or more elements of HTML by its/their CSS selector). </p>
+      <p class="mt-3 text-gray-600 text-xl">There are 5 different ways to select an element in the DOM:
+        <br><br>
+        1.
+        document.getElementsByTagName : Select one or more elements of HTML by its/their tag or element name.
+        <br>
+        2.
+        document.getElementById : Select one HTML element by its unique id.
+        <br>
+        3. document.getElementsByClass : Select one or
+        more elements of HTML by its/their class name.
+        <br>
+        4.
+        document.querySelector : Select one element of HTML by its CSS selector.
+        <br>
+        5. document.querySelectorAll : Select one
+        or more elements of HTML by its/their CSS selector.
+      </p>
     </div>
 
     <div class="my-6 px-6 py-4.5 bg-white">
@@ -72,13 +83,15 @@
         What is the difference between innerHTML, innerText, and textContent ?</p>
       <p class="mt-3 text-gray-600 text-xl">The differences between them are :
         <br><br>
-        1. 'innerHTML' gives us each and every character written in that perticular element or tag, even other HTML
+        1. innerHTML : IT gives us each and every character written in that perticular element or tag, even other HTML
         contents, just not the comments.
         <br>
-        2. 'innerText' gives us only the text or string that is shown on the webpage, written in that element ignoring
+        2. innerText : IT gives us only the text or string that is shown on the webpage, written in that element
+        ignoring
         other things.
         <br>
-        3. 'textContent' gives us only the text that is written in that element ignoring other things like 'innerText'
+        3. textContent : IT gives us only the text that is written in that element ignoring other things like
+        'innerText'
         but whether its shown or hidden in webpage by CSS properties, it will give us every text in between that
         element. So, CSS does not applied to it.
       </p>
@@ -95,28 +108,44 @@
     <div class="my-6 px-6 py-4.5 bg-white">
       <p class="text-[var(--primary-text)] text-xl font-bold pb-4 border-b-2 border-dashed border-slate-200">Question-4:
         What is event bubbling in the DOM?</p>
-      <p class="mt-3 text-gray-600 text-xl">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit, sint dolorum
-        aliquid magni consequuntur iusto sed odio praesentium voluptatem doloribus ipsam accusantium architecto
-        voluptatum quod. Numquam consequuntur necessitatibus iusto.</p>
+      <p class="mt-3 text-gray-600 text-xl">Event bubbling is a propagation mechanism which allows a target element
+        during the event to propagate to its ancestor starting with its parent element. That means when an event occurs,
+        the target element bubbles up the order and search for more events through its ancestor upto the body node
+        unless its stopped. For example, let's assume there is a button inside a div both having one event listener for
+        each to show
+        something in
+        the console on clicking on each of them.
+        <br><br>
+        1. Now, if there occurs a click on the div other than where the button is, the console will show what the event
+        requires to show for clicking on the div. It has nothing to do with the button's event.
+        <br>
+        2. But, if there occurs a click on the button, the console will show the button
+        event output and will bubble up the order searching for another event and will find its parent element (the div)
+        having another item
+        to show on console and will show that also.
+        <br><br>
+        That means, the console will not stop just after showing the result for clicking
+        the child node. It also will search for events of parent node and show the result for the event if there is one.
+        That is what Event Bubble is in the DOM.
+      </p>
     </div>
 
     <div class="my-6 px-6 py-4.5 bg-white">
       <p class="text-[var(--primary-text)] text-xl font-bold pb-4 border-b-2 border-dashed border-slate-200">Question-5:
         How do you create, add, and remove elements using JavaScript?</p>
       <p class="mt-3 text-gray-600 text-xl">
-        Creating an element and showing how to add and remove that element, using JavaScript:
+        Using a button and showing how to create, add and remove an element, using JavaScript:
         <br><br>
-        1. const newElement = document.createElement('Tag Name Of HTML Element');
+        1. Create : const newBtn = document.createElement('button');
         <br>
-        2. document.body.appendChild(newElement);
+        2. Add : document.body.appendChild(newBtn);
         <br>
-        3. document.body.removeChild(newElement);
+        3. Remove : document.body.removeChild(newBtn);
         <br>
-        or,
-        <br>
-        newElement.remove();
+        or, newBtn.remove();
         <br><br>
-        This is how to create (.createElement('Element Tag')), add (.appendChild()) and remove (.removeChild() / ) an
+        This is how to create (.createElement('Element Tag')), add (.appendChild(element)) and remove
+        (.removeChild(element) / element.remove()) an
         element using
         JavaScript.
       </p>
